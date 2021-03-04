@@ -1,0 +1,25 @@
+from appium import webdriver
+from selenium.webdriver.common.by import By
+from page.base_page import BasePage
+
+
+class Search(BasePage):
+    driver: webdriver = None
+
+    # 搜索框
+    _et_search_context = (By.ID, "com.intretech.readerx:id/edit_search")
+    # 绘本书籍的查看更多
+    _tv_more_books = (By.ID, "com.intretech.readerx:id/tv_search_books_more")
+    # 专辑的查看更多
+    _tv_more_blbum = (By.ID, "com.intretech.readerx:id/tv_search_album_more")
+    # 曲目的查看更多
+    _tv_more_song = (By.ID, "com.intretech.readerx:id/tv_search_song_more")
+
+    # 输入搜索内容
+    def input_search_context(self, search_context):
+        self.find_element_id(self._et_search_context).clear()
+        self.find_element_id(self._et_search_context).send_keys(search_context)
+        # 点击键盘的回车按钮
+        self.driver.press_keycode(66)
+        # 隐藏键盘
+        self.driver.hide_keyboard()

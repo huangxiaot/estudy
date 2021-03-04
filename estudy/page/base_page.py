@@ -16,7 +16,7 @@ class BasePage:
     # 通过xpath定位
     def find_element_xpath(self, locator):
         try:
-            return self.driver.find_element(locator)
+            return self.driver.find_element_by_xpath(locator)
         except:
             return self.driver.find_elements(locator)
 
