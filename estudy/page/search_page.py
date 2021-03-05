@@ -1,6 +1,11 @@
+import logging
 from appium import webdriver
 from selenium.webdriver.common.by import By
 from page.base_page import BasePage
+from utils.log import Logger
+
+# 实例化对象
+logger = Logger("search", "E:\\study\\Fork\\estudy\\estudy\\data\\search.log", filelevel=logging.INFO)
 
 
 class Search(BasePage):
@@ -10,6 +15,9 @@ class Search(BasePage):
     _et_search_context = (By.ID, "com.intretech.readerx:id/edit_search")
     # 绘本书籍的查看更多
     _tv_more_books = (By.ID, "com.intretech.readerx:id/tv_search_books_more")
+    # 绘本书籍列表
+    _tv_book_list = "android.view.ViewGroup"
+    _tv_book_title = (By.ID, "com.intretech.readerx:id/tv_search_title")
     # 专辑的查看更多
     _tv_more_blbum = (By.ID, "com.intretech.readerx:id/tv_search_album_more")
     # 曲目的查看更多
@@ -23,3 +31,10 @@ class Search(BasePage):
         self.driver.press_keycode(66)
         # 隐藏键盘
         self.driver.hide_keyboard()
+        try:
+            pass
+        except:
+            pass
+        else:
+            pass
+        logger.info(search_context)
