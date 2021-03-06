@@ -20,7 +20,7 @@ class AppStart:
                 }
 
         cls.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-        cls.driver.implicitly_wait(65)
+        cls.driver.implicitly_wait(5)
         return ReadingPartnerPage(cls.driver)
 
     # 退出app
