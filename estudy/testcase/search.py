@@ -16,5 +16,9 @@ class TestSearch:
     def test_search(self, search_context):
         self.search.input_search_context(search_context)
 
+    # 搜索
+    def test_excel_search(self):
+        self.search.input_excel_search_context()
+
     def teardown_class(self):
         AppStart.quit()
