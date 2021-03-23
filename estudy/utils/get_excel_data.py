@@ -3,9 +3,11 @@ import pandas as pd
 
 
 class GetExcelData:
+    # 初始化，外部传入一个path参数
     def __init__(self, path: ''):
         self.path = path
 
+    # 使用pandas读取外部excel文件
     def pd_read_excel(self, path):
         # 读取excel文件中的子表book的第二列的内容，列下表从0开始(不包括列名)
         st_data = pd.read_excel(path, sheet_name="book", usecols=[1])

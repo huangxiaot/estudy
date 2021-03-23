@@ -1,3 +1,4 @@
+# 搜索页面
 import logging
 import time
 from appium import webdriver
@@ -6,15 +7,16 @@ from page.base_page import BasePage
 from utils.get_excel_data import GetExcelData
 from utils.log import Logger
 
-# 实例化对象
+# 实例化日志对象
 logger = Logger("search", "E:\\study\\Fork\\estudy\\estudy\\data\\search.log", filelevel=logging.INFO)
 
 
 class Search(BasePage):
-    # 需要读取的文件的路径
+    # 需要读取的excel文件的路径
     path = "E:\\study\\Fork\\other_file\\test_search.xlsx"
     driver: webdriver = None
 
+    """初始化"""
     def __init__(self, driver):
         super().__init__(driver)
         self.excel_data = GetExcelData(self.driver)
@@ -33,7 +35,7 @@ class Search(BasePage):
     # 曲目的查看更多
     _tv_more_song = (By.ID, "com.intretech.readerx:id/tv_search_song_more")
 
-    # 输入搜索内容
+    """输入搜索内容，实现搜索功能"""
     def input_search_context(self, search_context):
         self.find_element_id(self._et_search_context).clear()
         self.find_element_id(self._et_search_context).send_keys(search_context)
@@ -46,10 +48,8 @@ class Search(BasePage):
             self.find_element_xpath(self._tv_book)
         except:
             logger.info(search_context)
-        else:
-            return True
 
-    # 输入搜索内容，使用pandas读取excel文件内容
+    """输入搜索内容，使用pandas读取外部excel文件内容来实现搜索"""
     def input_excel_search_context(self):
         # 获取excel文件的内容
         search_contexts = self.excel_data.pd_read_excel(self.path)
@@ -61,12 +61,7 @@ class Search(BasePage):
             self.driver.press_keycode(66)
             # 隐藏键盘
             self.driver.hide_keyboard()
-            # time.sleep(0.5)
             try:
                 self.find_element_xpath(self._tv_book)
             except:
                 logger.info(context)
-                # print(context)
-            # 使用return True会跳出for循环
-            # else:
-            #     return True
