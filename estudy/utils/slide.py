@@ -24,17 +24,17 @@ class Slide(BasePage):
         # 起始x坐标
         x1 = screen_size['width'] * 0.5
         # 起始 y 坐标
-        y1 = screen_size['height'] * 0.8
+        y1 = screen_size['height'] * 0.75
         # 终点 y 坐标
-        y2 = screen_size['height'] * 0.2
+        y2 = screen_size['height'] * 0.25
         self.driver.swipe(x1, y1, x1, y2, t)
 
     # 下滑
     def swipe_down(self, t):
         screen_size = self.get_screen_size()
         x1 = screen_size['width'] * 0.5
-        y1 = screen_size['height'] * 0.2
-        y2 = screen_size['height'] * 0.8
+        y1 = screen_size['height'] * 0.25
+        y2 = screen_size['height'] * 0.75
         self.driver.swipe(x1, y1, x1, y2, t)
 
     # 左滑
@@ -54,16 +54,10 @@ class Slide(BasePage):
         x2 = screen_size['width'] * 0.8
         self.driver.swipe(x1, y1, x2, y1, t)
 
-    """
-        以下为scroll()，可以根据页面中两个元素位置距离进行滑动：scroll(self, origin_el, destination_el, duration=None)：
-        - originalEl - 开始要滚动的元素
-        - destinationEl - 要滚动到的元素
-        - 即从元素origin_el滚动至元素destination_el
-        - duration 即滚动的持续时间
-        driver.scroll(el1,el2)
-    """
-
-    def scroll(self, el1, el2, t):
-        self.find_element_xpath(el1)
-        self.find_element_xpath(el2)
-        self.driver.scroll(el1, el2, t)
+    # 下滑
+    def swipe_down_search(self, t):
+        screen_size = self.get_screen_size()
+        x1 = screen_size['width'] * 0.5
+        y1 = screen_size['height'] * 0.5
+        y2 = screen_size['height'] * 0.75
+        self.driver.swipe(x1, y1, x1, y2, t)

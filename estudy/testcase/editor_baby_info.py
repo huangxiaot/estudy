@@ -15,8 +15,8 @@ class TestEditorBabyInfo:
 
     """修改宝贝昵称成功"""
     def test_editor_baby_name_success(self):
-        baby_name = "蜗牛宝宝"
-        self.editor_baby_info.editor_baby_name_success(baby_name)
+        editor_baby_name = "蜗牛宝宝"
+        self.editor_baby_info.editor_baby_name_success(editor_baby_name)
 
     """修改宝贝性别成功"""
     def test_editor_baby_sex_success(self):
@@ -29,9 +29,6 @@ class TestEditorBabyInfo:
     """修改与宝贝的关系成功"""
     def test_editor_baby_relation_success(self):
         self.editor_baby_info.editor_baby_relation_success()
-
-    def test_01(self):
-        self.editor_baby_info.change_baby_birth()
 
     def teardown_class(self):
         AppStart.quit()
