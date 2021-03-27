@@ -4,7 +4,6 @@ from appium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from page.base_page import BasePage
-from page.my_family_page import MyFamilyPage
 from utils.slide import Slide
 
 
@@ -14,13 +13,14 @@ class EditorBabyInfoPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.slide = Slide(driver)
-        self.my_family_page = MyFamilyPage(driver)
 
     """以下元素为修改头像对应的元素"""
     # 宝贝头像
     _iv_baby_avatar_display = (By.ID, "com.intretech.readerx:id/img_baby_detail_avatar")
     # 拍照&相册按钮
     _rl_editor_baby_portrait = "android.widget.RelativeLayout"
+    # 拍照&相册弹框底部取消按钮
+    _tv_editor_baby_portrait_cancel = (By.ID, "com.intretech.readerx:id/tv_bottom_menu_cancel")
     # 系统拍照页面的拍照按钮
     _iv_editor_baby_avatar_take_photo = (By.ID, "com.android.camera:id/shutter_button")
     # 系统拍照后确认按钮
@@ -80,8 +80,16 @@ class EditorBabyInfoPage(BasePage):
     # 修改与宝贝关系
     _fl_editor_baby_relation = (By.ID, "com.intretech.readerx:id/design_bottom_sheet")
 
-    """拍照方式修改宝贝头像，并修改成功"""
-    def editor_baby_portrait_photograph_success(self):
+    """取消修改宝贝头像"""
+    def editor_baby_portrait_cancel(self):
+        # 点击宝贝头像，弹出弹框后点击取消
+        self.find_element_id(self._iv_baby_avatar_display).click()
+        self.find_element_id(self._tv_editor_baby_portrait_cancel).click()
+        time.sleep(1)
+        print("取消修改宝贝头像")
+
+    """拍照方式修改宝贝头像，进入拍照页面"""
+    def editor_baby_portrait_photograph(self):
         # 点击宝贝头像
         self.find_element_id(self._iv_baby_avatar_display).click()
         """ 
@@ -94,14 +102,50 @@ class EditorBabyInfoPage(BasePage):
             print("没有找到拍照按钮")
         else:
             portrait[0].click()
-        # 拍照页面点击拍照-确定-裁剪“✔”
+
+    """1.拍照方式修改宝贝头像，拍照并修改成功"""
+    def editor_baby_portrait_photograph_success(self):
+        self.editor_baby_portrait_photograph()
+        # 系统拍照页面点击拍照-确定-裁剪“✔”
         self.find_element_id(self._iv_editor_baby_avatar_take_photo).click()
         self.find_element_id(self._btn_editor_baby_avatar_confirm_photo).click()
         self.find_element_id(self._tv_editor_baby_avatar_tailor_confirm).click()
         time.sleep(1)
+        print("拍照方式宝贝头像修改成功")
 
-    """相册方式修改宝贝头像，并修改成功"""
-    def editor_baby_portrait_photo_album_success(self):
+    """2.拍照方式修改宝贝头像，未拍照，在系统拍照页面取消拍照"""
+    def editor_baby_portrait_photograph_cancel(self):
+        self.editor_baby_portrait_photograph()
+        # 系统拍照页面点击左下角取消
+        self.find_element_id(self._btn_editor_baby_avatar_cancel_photo).click()
+        time.sleep(1)
+        self.find_element_id(self._tv_editor_baby_portrait_cancel).click()
+        print("拍照方式取消拍照成功")
+
+    """3.拍照方式修改宝贝头像，已拍照，在拍的照片页面取消拍照"""
+    def editor_baby_portrait_photograph_cancel_photo(self):
+        self.editor_baby_portrait_photograph()
+        # 系统拍照页面点击拍照
+        self.find_element_id(self._iv_editor_baby_avatar_take_photo).click()
+        # 拍照后取消拍照
+        self.find_element_id(self._btn_editor_baby_avatar_cancel_photo).click()
+        time.sleep(1)
+        self.find_element_id(self._tv_editor_baby_portrait_cancel).click()
+        print("拍照方式已拍照，取消拍照成功")
+
+    """4.拍照方式修改宝贝头像，已拍照，在裁剪页面点击“x”"""
+    def editor_baby_portrait_photograph_cancel_tailor(self):
+        self.editor_baby_portrait_photograph()
+        # 系统拍照页面点击拍照-确定-裁剪“x”
+        self.find_element_id(self._iv_editor_baby_avatar_take_photo).click()
+        self.find_element_id(self._btn_editor_baby_avatar_confirm_photo).click()
+        # 系统拍照页面直接点击手机系统的返回键
+        self.driver.press_keycode(4)
+        time.sleep(1)
+        print("拍照方式取消裁剪成功")
+
+    """相册方式修改宝贝头像"""
+    def editor_baby_portrait_photo_album(self):
         # 点击宝贝头像
         self.find_element_id(self._iv_baby_avatar_display).click()
         """ 
@@ -114,9 +158,13 @@ class EditorBabyInfoPage(BasePage):
             print("没有找到拍照按钮")
         else:
             portrait[1].click()
+
+    """1.相册方式修改宝贝头像，修改成功"""
+    def editor_baby_portrait_photo_album_success(self):
+        self.editor_baby_portrait_photo_album()
         """ 
-        1.判断系统相册中有没有照片
-        2.有照片则点击第二张，没有照片则输出”没有找到照片“
+            1.判断系统相册中有没有照片
+            2.有照片则点击第二张，没有照片则输出”没有找到照片“
         """
         try:
             photos = self.find_element_classname(self._iv_editor_baby_avatar_system_photo_album)
@@ -127,26 +175,53 @@ class EditorBabyInfoPage(BasePage):
         # 系统相册选择照片后裁剪页面点击”✔“
         self.find_element_id(self._tv_editor_baby_avatar_tailor_confirm).click()
         time.sleep(1)
+        print("相册方式修改宝贝头像成功")
 
-    """修改宝贝昵称，并修改成功"""
-    def editor_baby_name_success(self, editor_baby_name):
-        # 点击宝贝昵称，进入修改宝贝昵称页面-修改宝贝昵称-点击“✔”
+    """2.相册方式修改宝贝头像，相册页面取消"""
+    def editor_baby_portrait_photo_album_cancel(self):
+        self.editor_baby_portrait_photo_album()
+        # 系统相册页面直接点击手机系统的返回键
+        self.driver.press_keycode(4)
+        time.sleep(1)
+        self.find_element_id(self._tv_editor_baby_portrait_cancel).click()
+        print("相册方式，在系统相册页面取消修改宝贝头像成功")
+
+    """3.相册方式修改宝贝头像，裁剪页面取消"""
+    def editor_baby_portrait_photo_album_cancel_tailor(self):
+        self.editor_baby_portrait_photo_album()
+        """ 
+            1.判断系统相册中有没有照片
+            2.有照片则点击第二张，没有照片则输出”没有找到照片“
+        """
+        try:
+            photos = self.find_element_classname(self._iv_editor_baby_avatar_system_photo_album)
+        except NoSuchElementException:
+            print("没有找到照片")
+        else:
+            photos[1].click()
+        # 系统相册选择照片后裁剪页面点击”x“
+        self.driver.press_keycode(4)
+        time.sleep(1)
+        print("相册方式，选择相册后在裁剪页面取消修改宝贝头像成功")
+
+    """修改宝贝昵称页面-输入宝贝昵称"""
+    def input_baby_name(self, editor_baby_name):
         self.find_element_id(self._tv_baby_name_display).click()
-        self.find_element_id(self._tv_baby_name_display).clear()
+        self.find_element_id(self._et_editor_baby_name).clear()
         self.find_element_id(self._et_editor_baby_name).send_keys(editor_baby_name)
+        # return editor_baby_name
+
+    """1.修改宝贝昵称，并修改成功"""
+    def editor_baby_name_success(self, editor_baby_name):
+        # 修改宝贝昵称页面-修改宝贝昵称-点击“✔”
+        self.input_baby_name(editor_baby_name)
         self.find_element_id(self._iv_editor_baby_name_confirm).click()
         time.sleep(1)
-        return editor_baby_name
 
-    """判断修改后的宝贝昵称是否正确"""
-    def judge_baby_name_validity(self, editor_baby_name):
-        my_family_page_baby_name_display = self.my_family_page.split_baby_name_display()
-        baby_info_page_baby_name_display = self.find_element_id(self._tv_baby_name_display).text
-        editor_baby_name = self.editor_baby_name_success(editor_baby_name)
-        if (my_family_page_baby_name_display == baby_info_page_baby_name_display) & (editor_baby_name == baby_info_page_baby_name_display):
-            print("宝贝昵称修改成功")
-        else:
-            print("宝贝昵称修改失败")
+    """宝贝信息页面显示的昵称"""
+    def check_result_baby_name(self):
+        baby_name_display = self.find_element_id(self._tv_baby_name_display).text
+        return baby_name_display
 
     """修改宝贝性别，并修改成功"""
     def editor_baby_sex_success(self):
@@ -162,21 +237,21 @@ class EditorBabyInfoPage(BasePage):
         self.find_element_id(self._rl_baby_birth_display).click()
         # 点击修改年份
         self.find_element_id(self._tv_editor_baby_birth_year).click()
-        is_find = False
-        is_sequential_search = True
+        is_find = False     # 默认没找到元素
+        is_sequential_search = True      # 默认顺序查找，即上滑
         while is_find is not True:
             try:
                 self.driver.find_element_by_xpath("//android.widget.TextView[@text='1995']").click()
-                is_find = True
+                is_find = True      # 找到了，退出循环
             except NoSuchElementException:
-                if is_sequential_search:
+                if is_sequential_search:      # 顺序查找
                     self.slide.swipe_up(2500)
                     # 所有年份，获取屏幕列表中最底部的一个年份的text值
                     years = self.find_element_classname(self._tv_editor_baby_birth_years)
                     years_text = years[9].text
                     print(years_text)
-                    if years_text == "2021":
-                        is_sequential_search = False
+                    if years_text == "2021":      # 到列表的最后一个，但没找到
+                        is_sequential_search = False      # 转换为逆序查找，即下滑
                 else:
                     self.slide.swipe_down_search(2500)
         # 修改月份，点击上一个月
