@@ -14,6 +14,13 @@ class EditorBabyInfoPage(BasePage):
         super().__init__(driver)
         self.slide = Slide(driver)
 
+    """我的页面显示的宝贝信息，包括头像、昵称、性别、年龄"""
+    # 宝贝昵称、性别、年龄显示
+    _tv_show_baby_info = (By.ID, "com.intretech.readerx:id/tv_person_name")
+
+    """宝贝信息页面的返回键"""
+    _iv_baby_information_display_back = (By.ID, "com.intretech.readerx:id/btn_toolbar_back")
+
     """以下元素为修改头像对应的元素"""
     # 宝贝头像
     _iv_baby_avatar_display = (By.ID, "com.intretech.readerx:id/img_baby_detail_avatar")
@@ -209,7 +216,6 @@ class EditorBabyInfoPage(BasePage):
         self.find_element_id(self._tv_baby_name_display).click()
         self.find_element_id(self._et_editor_baby_name).clear()
         self.find_element_id(self._et_editor_baby_name).send_keys(editor_baby_name)
-        # return editor_baby_name
 
     """1.修改宝贝昵称，并修改成功"""
     def editor_baby_name_success(self, editor_baby_name):
@@ -218,18 +224,58 @@ class EditorBabyInfoPage(BasePage):
         self.find_element_id(self._iv_editor_baby_name_confirm).click()
         time.sleep(1)
 
-    """宝贝信息页面显示的昵称"""
-    def check_result_baby_name(self):
+    """宝贝信息页面显示的宝贝昵称"""
+    def baby_information_baby_name_display(self):
+        # 获取宝贝信息页面的宝贝昵称
         baby_name_display = self.find_element_id(self._tv_baby_name_display).text
         return baby_name_display
 
-    """修改宝贝性别，并修改成功"""
-    def editor_baby_sex_success(self):
+    """将我的页面中宝贝昵称分割为独立字符串"""
+    def split_baby_name_display(self):
+        # 返回我的页面
+        self.find_element_id(self._iv_baby_information_display_back).click()
+        # 获取页面显示的宝贝昵称、性别、年龄
+        my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
+        # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
+        my_page_baby_infos = my_page_baby_infos_display.split("/")
+        print(my_page_baby_infos)
+        # 获取宝贝昵称
+        my_page_baby_name_display = my_page_baby_infos[0]
+        print(my_page_baby_name_display)
+        return my_page_baby_name_display
+
+    """1.修改宝贝性别女，并修改成功"""
+    def editor_baby_sex_girl_success(self):
         # 循环点击男、女生头像
         for i in range(1, 10):
             self.find_element_id(self._iv_editor_baby_sex_boy).click()
             self.find_element_id(self._iv_editor_baby_sex_girl).click()
             i = i + 1
+
+    """2.修改宝贝性别男，并修改成功"""
+    def editor_baby_sex_boy_success(self):
+        # 循环点击男、女生头像
+        for i in range(1, 10):
+            self.find_element_id(self._iv_editor_baby_sex_girl).click()
+            self.find_element_id(self._iv_editor_baby_sex_boy).click()
+            i = i + 1
+
+    """将我的页面中宝贝性别分割为独立字符串"""
+    def split_baby_sex_display(self):
+        # 返回我的页面
+        self.find_element_id(self._iv_baby_information_display_back).click()
+        # 获取页面显示的宝贝昵称、性别、年龄
+        my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
+        # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
+        my_page_baby_infos = my_page_baby_infos_display.split("/")
+        print(my_page_baby_infos)
+        # 将存放宝贝性别和年龄的列表按照空格切割一次，切割后的列表中存放两个字符串，一个为性别，一个为年龄
+        my_page_baby_sex_and_age = my_page_baby_infos[1].split(" ", 1)
+        print(my_page_baby_sex_and_age)
+        # 读取列表中宝贝性别
+        my_page_baby_sex_display = my_page_baby_sex_and_age[0]
+        print(my_page_baby_sex_display)
+        return my_page_baby_sex_display
 
     """修改宝贝生日，并修改成功"""
     def editor_baby_birth_success(self):
@@ -278,3 +324,20 @@ class EditorBabyInfoPage(BasePage):
         self.slide.swipe_up(500)
         self.find_element_id(self._tv_editor_baby_relation_confirm).click()
         time.sleep(1)
+
+    """将我的页面中宝贝年龄分割为独立字符串"""
+    def split_my_page_baby_age_display(self):
+        # 返回我的页面
+        self.find_element_id(self._iv_baby_information_display_back).click()
+        # 获取页面显示的宝贝昵称、性别、年龄
+        my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
+        # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
+        my_page_baby_infos = my_page_baby_infos_display.split("/")
+        print(my_page_baby_infos)
+        # 将存放宝贝性别和年龄的列表按照空格切割一次，切割后的列表中存放两个字符串，一个为性别，一个为年龄
+        my_page_baby_sex_and_age = my_page_baby_infos[1].split(" ", 1)
+        print(my_page_baby_sex_and_age)
+        # 读取列表中宝贝性别
+        my_page_baby_age_display = my_page_baby_sex_and_age[1]
+        print(my_page_baby_age_display)
+        return my_page_baby_age_display

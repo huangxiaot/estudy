@@ -2,7 +2,7 @@
 import time
 from selenium.webdriver.common.by import By
 from page.base_page import BasePage
-from page.my_family_page import MyFamilyPage
+from page.editor_baby_info_page import EditorBabyInfoPage
 from page.search_page import Search
 from page.select_devices_page import SelectDevicesPage
 
@@ -14,6 +14,8 @@ class ReadingPartnerPage(BasePage):
     _add_devices = (By.ID, "com.intretech.readerx:id/btn_toolbar_operation")
     # 左上角我的页面入口
     _iv_my = (By.ID, "com.intretech.readerx:id/img_toolbar_main_avatar")
+    # 宝贝信息页面入口
+    _iv_baby_info = (By.ID, "com.intretech.readerx:id/img_person_portrait")
 
     """进入搜索页面"""
     def enter_search(self):
@@ -26,7 +28,8 @@ class ReadingPartnerPage(BasePage):
         self.find_element_id(self._add_devices).click()
         return SelectDevicesPage(self.driver)
 
-    """进入我的页面"""
-    def enter_my_family_page(self):
+    """进入我的--修改宝贝信息页面"""
+    def enter_editor_baby_info_page(self):
         self.find_element_id(self._iv_my).click()
-        return MyFamilyPage(self.driver)
+        self.find_element_id(self._iv_baby_info).click()
+        return EditorBabyInfoPage(self.driver)
