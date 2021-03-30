@@ -30,6 +30,7 @@ class ReadingPartnerPage(BasePage):
 
     """进入我的--修改宝贝信息页面"""
     def enter_editor_baby_info_page(self):
+        time.sleep(1)
         self.find_element_id(self._iv_my).click()
         self.find_element_id(self._iv_baby_info).click()
         return EditorBabyInfoPage(self.driver)

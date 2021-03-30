@@ -47,7 +47,6 @@ class Slide(BasePage):
 
     # 右滑
     def swipe_right(self, t):
-        print("111")
         screen_size = self.get_screen_size()
         x1 = screen_size['width'] * 0.2
         y1 = screen_size['height'] * 0.5
@@ -60,4 +59,23 @@ class Slide(BasePage):
         x1 = screen_size['width'] * 0.5
         y1 = screen_size['height'] * 0.5
         y2 = screen_size['height'] * 0.75
+        self.driver.swipe(x1, y1, x1, y2, t)
+
+    # 修改宝贝信息页面的下滑
+    def swipe_down_baby_relation(self, t):
+        screen_size = self.get_screen_size()
+        x1 = screen_size['width'] * 0.5
+        y1 = screen_size['height'] * 0.85
+        y2 = screen_size['height'] * 0.95
+        self.driver.swipe(x1, y1, x1, y2, t)
+
+    # 修改宝贝信息页面的上滑
+    def swipe_up_baby_relation(self, t):
+        screen_size = self.get_screen_size()
+        # 起始x坐标
+        x1 = screen_size['width'] * 0.5
+        # 起始 y 坐标
+        y1 = screen_size['height'] * 0.95
+        # 终点 y 坐标
+        y2 = screen_size['height'] * 0.85
         self.driver.swipe(x1, y1, x1, y2, t)
