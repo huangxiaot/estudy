@@ -1,3 +1,4 @@
+# 修改宝贝信息
 import pytest
 import yaml
 from page.start import AppStart
@@ -152,10 +153,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_cancel(self):
         self.editor_baby_info.editor_baby_birth_cancel()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("1.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("1.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """2.不修改宝贝生日，点击确定按钮"""
@@ -163,10 +164,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_confirm(self):
         self.editor_baby_info.editor_baby_birth_confirm()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("2.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("2.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """3.点击宝贝生日年份，不修改，点击取消"""
@@ -174,10 +175,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_year_cancel(self):
         self.editor_baby_info.editor_baby_birth_year_cancel()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("3.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("3.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """4.点击宝贝生日年份，不修改，点击确定"""
@@ -185,10 +186,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_year_confirm(self):
         self.editor_baby_info.editor_baby_birth_year_confirm()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("4.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("4.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """5.修改宝贝生日月份，修改后点击取消"""
@@ -196,10 +197,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_month_cancel(self):
         self.editor_baby_info.editor_baby_birth_month_cancel()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("5.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("5.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """6.修改宝贝生日月份，修改后点击确定"""
@@ -207,10 +208,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_month_confirm(self):
         self.editor_baby_info.editor_baby_birth_month_confirm()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("6.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("6.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """7.修改宝贝生日日期，修改后点击取消"""
@@ -218,10 +219,10 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_day_cancel(self):
         self.editor_baby_info.editor_baby_birth_day_cancel()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-18"
         print("7.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("7.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
     """8.修改宝贝生日日期，修改后点击确认按钮"""
@@ -229,23 +230,67 @@ class TestEditorBabyInfo:
     def test_editor_baby_birth_day_confirm(self):
         self.editor_baby_info.editor_baby_birth_day_confirm()
         # 判断宝贝信息页面的宝贝生日显示
-        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "2000-05-15"
         print("8.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
         # 判断我的页面显示的宝贝年龄显示
-        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "20岁 十个月"
         print("8.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
-    """修改宝贝生日成功"""
-    def test_editor_baby_birth_success(self):
-        self.editor_baby_info.editor_baby_birth_success()
+    """9.修改宝贝生日所有信息"""
+    @pytest.mark.run(order=26)
+    def test_editor_baby_birth(self):
+        self.editor_baby_info.editor_baby_birth()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1994-04-15"
+        print("8.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "26岁 十一个月"
+        print("8.修改的宝贝生日与我的页面显示的宝贝年龄一致")
 
-    """修改与宝贝的关系成功"""
+    """1.取消修改与宝贝的关系"""
+    @pytest.mark.run(order=27)
+    def test_editor_baby_relation_cancel(self):
+        self.editor_baby_info.editor_baby_relation_cancel()
+        # 判断宝贝信息页面的与宝贝关系显示
+        assert self.editor_baby_info.baby_information_baby_relation_display() == "爸爸"
+        print("1.修改的与宝贝关系与宝贝信息页面显示的与宝贝关系一致")
+
+    """2.不修改与宝贝的关系，点击确定"""
+    @pytest.mark.run(order=27)
+    def test_editor_baby_relation_confirm(self):
+        self.editor_baby_info.editor_baby_relation_confirm()
+        # 判断宝贝信息页面的与宝贝关系显示
+        assert self.editor_baby_info.baby_information_baby_relation_display() == "爸爸"
+        print("2.修改的与宝贝关系与宝贝信息页面显示的与宝贝关系一致")
+
+    """3.修改与宝贝的关系，不保存"""
+    @pytest.mark.run(order=28)
+    def test_editor_baby_relation_cancel_editor(self):
+        self.editor_baby_info.editor_baby_relation_cancel_editor()
+        # 判断宝贝信息页面的与宝贝关系显示
+        assert self.editor_baby_info.baby_information_baby_relation_display() == "爸爸"
+        print("3.修改的与宝贝关系与宝贝信息页面显示的与宝贝关系一致")
+
+    """4.下滑一个，修改与宝贝的关系：爸爸-亲友-阿姨-叔叔-外婆-外公-姥姥-姥爷-奶奶-爷爷-妈妈"""
+    @pytest.mark.run(order=29)
+    def test_editor_baby_relation_down(self):
+        self.editor_baby_info.editor_baby_relation_down()
+        # 判断宝贝信息页面的与宝贝关系显示
+        assert self.editor_baby_info.baby_information_baby_relation_display() == "亲友"
+        print("4.修改的与宝贝关系与宝贝信息页面显示的与宝贝关系一致")
+
+    """5.上滑一个，修改与宝贝的关系：爸爸-妈妈-爷爷-奶奶-姥爷-姥姥-外公-外婆-叔叔-阿姨-亲友"""
+    @pytest.mark.run(order=30)
+    def test_editor_baby_relation_up(self):
+        self.editor_baby_info.editor_baby_relation_up()
+        # 判断宝贝信息页面的与宝贝关系显示
+        assert self.editor_baby_info.baby_information_baby_relation_display() == "爸爸"
+        print("5.修改的与宝贝关系与宝贝信息页面显示的与宝贝关系一致")
+
+    """6.滑动任意位置修改与宝贝的关系，并修改成功"""
+    @pytest.mark.run(order=31)
     def test_editor_baby_relation_success(self):
         self.editor_baby_info.editor_baby_relation_success()
-
-    """修改与宝贝的关系为爸爸"""
-    def test_editor_baby_relation_dad(self):
-        self.editor_baby_info.editor_baby_relation_dad()
 
     def teardown_class(self):
         AppStart.quit()

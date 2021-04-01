@@ -22,7 +22,7 @@ class EditorBabyInfoPage(BasePage):
     # 宝贝信息页面入口
     _iv_baby_info = (By.ID, "com.intretech.readerx:id/img_person_portrait")
     # 当前用户与宝贝的关系
-    _tv_baby_relation = (By.ID, "com.intretech.readerx:id/tv_family_user_title")
+    _tv_baby_relation_family = (By.ID, "com.intretech.readerx:id/tv_family_user_title")
 
     """宝贝信息页面的返回键"""
     _iv_baby_information_display_back = (By.ID, "com.intretech.readerx:id/btn_toolbar_back")
@@ -92,8 +92,10 @@ class EditorBabyInfoPage(BasePage):
     _btn_editor_baby_birth_confirm = (By.ID, "android:id/button1")
 
     """以下元素为修改与宝贝的关系相对应的元素"""
-    # 与宝贝的关系显示
+    # 与宝贝的关系入口
     _rl_baby_relation_display = (By.ID, "com.intretech.readerx:id/layout_baby_detail_relation")
+    # 与宝贝的关系显示
+    _iv_baby_relation_detail_display = (By.ID, "com.intretech.readerx:id/tv_baby_detail_relation")
     # 修改与宝贝关系的确认按钮
     _tv_editor_baby_relation_confirm = (By.ID, "com.intretech.readerx:id/tv_bottom_relation_sure")
     # 修改与宝贝关系的取消按钮
@@ -337,8 +339,6 @@ class EditorBabyInfoPage(BasePage):
             self.find_element_id(self._iv_editor_baby_sex_boy).click()
             self.find_element_id(self._iv_editor_baby_sex_girl).click()
             i = i + 1
-        # 返回我的页面
-        self.find_element_id(self._iv_baby_information_display_back).click()
 
     """2.修改宝贝性别男，并修改成功"""
     def editor_baby_sex_boy_success(self):
@@ -366,15 +366,13 @@ class EditorBabyInfoPage(BasePage):
 
     """修改宝贝生日年份"""
     def editor_baby_birth_year_success(self):
-        # 点击宝贝生日，进入编辑宝贝生日页面
-        self.find_element_id(self._rl_baby_birth_display).click()
         # 点击修改年份
         self.find_element_id(self._tv_editor_baby_birth_year).click()
         is_find = False     # 默认没找到元素
         is_sequential_search = True      # 默认顺序查找，即上滑
         while is_find is not True:
             try:
-                self.driver.find_element_by_xpath("//android.widget.TextView[@text='1995']").click()
+                self.driver.find_element_by_xpath("//android.widget.TextView[@text='1994']").click()
                 is_find = True      # 找到了，退出循环
             except NoSuchElementException:
                 if is_sequential_search:      # 顺序查找
@@ -390,16 +388,12 @@ class EditorBabyInfoPage(BasePage):
 
     """修改宝贝生日月份"""
     def editor_baby_birth_month_success(self):
-        # 点击宝贝生日，进入编辑宝贝生日页面
-        self.find_element_id(self._rl_baby_birth_display).click()
         # 修改月份，点击上一个月
         self.find_element_id(self._ib_editor_baby_name_month_previous).click()
         time.sleep(0.5)
 
     """修改宝贝生日日期"""
     def editor_baby_birth_day_success(self):
-        # 点击宝贝生日，进入编辑宝贝生日页面
-        self.find_element_id(self._rl_baby_birth_display).click()
         """
         1.判断是否存在18号
         2.存在点击，不存在则输出“没有找到该日期“
@@ -409,7 +403,7 @@ class EditorBabyInfoPage(BasePage):
         except NoSuchElementException:
             print("没有找到该日期")
         else:
-            days[17].click()
+            days[14].click()
         time.sleep(1)
 
     """1.不修改宝贝生日，点击取消按钮"""
@@ -457,6 +451,8 @@ class EditorBabyInfoPage(BasePage):
     def editor_baby_birth_month_cancel(self):
         # 进入宝贝信息页面
         self.find_element_id(self._iv_baby_info).click()
+        # 点击宝贝生日，进入编辑宝贝生日页面
+        self.find_element_id(self._rl_baby_birth_display).click()
         # 修改宝贝生日月份
         self.editor_baby_birth_month_success()
         self.find_element_id(self._btn_editor_baby_birth_cancel).click()
@@ -465,6 +461,8 @@ class EditorBabyInfoPage(BasePage):
     def editor_baby_birth_month_confirm(self):
         # 进入宝贝信息页面
         self.find_element_id(self._iv_baby_info).click()
+        # 点击宝贝生日，进入编辑宝贝生日页面
+        self.find_element_id(self._rl_baby_birth_display).click()
         # 修改宝贝生日月份
         self.editor_baby_birth_month_success()
         self.find_element_id(self._btn_editor_baby_birth_confirm).click()
@@ -473,12 +471,30 @@ class EditorBabyInfoPage(BasePage):
     def editor_baby_birth_day_cancel(self):
         # 进入宝贝信息页面
         self.find_element_id(self._iv_baby_info).click()
+        # 点击宝贝生日，进入编辑宝贝生日页面
+        self.find_element_id(self._rl_baby_birth_display).click()
         # 修改宝贝生日月份
         self.editor_baby_birth_day_success()
-        self.find_element_id(self._btn_editor_baby_birth_cancel)
+        self.find_element_id(self._btn_editor_baby_birth_cancel).click()
 
     """8.修改宝贝生日日期，修改后点击确认按钮"""
     def editor_baby_birth_day_confirm(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 点击宝贝生日，进入编辑宝贝生日页面
+        self.find_element_id(self._rl_baby_birth_display).click()
+        # 修改宝贝生日的日期
+        self.editor_baby_birth_day_success()
+        self.find_element_id(self._btn_editor_baby_birth_confirm).click()
+
+    """9.修改宝贝生日所有信息"""
+    def editor_baby_birth(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 点击宝贝生日，进入编辑宝贝生日页面
+        self.find_element_id(self._rl_baby_birth_display).click()
+        self.editor_baby_birth_year_success()
+        self.editor_baby_birth_month_success()
         self.editor_baby_birth_day_success()
         self.find_element_id(self._btn_editor_baby_birth_confirm).click()
 
@@ -503,6 +519,8 @@ class EditorBabyInfoPage(BasePage):
 
     """1.取消修改与宝贝的关系"""
     def editor_baby_relation_cancel(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 点击与宝贝关系，底部弹框显示宝贝关系
         self.find_element_id(self._rl_baby_relation_display).click()
         # 点击取消按钮
@@ -512,7 +530,7 @@ class EditorBabyInfoPage(BasePage):
     def editor_baby_relation_confirm(self):
         # 点击与宝贝关系，底部弹框显示宝贝关系
         self.find_element_id(self._rl_baby_relation_display).click()
-        # 点击取消按钮
+        # 点击确定按钮
         self.find_element_id(self._tv_editor_baby_relation_confirm).click()
 
     """3.修改与宝贝的关系，不保存"""
@@ -523,15 +541,7 @@ class EditorBabyInfoPage(BasePage):
         self.find_element_id(self._tv_editor_baby_relation_cancel).click()
         time.sleep(1)
 
-    """4.滑动任意位置修改与宝贝的关系，并修改成功"""
-    def editor_baby_relation_success(self):
-        # 点击与宝贝关系，底部弹框显示宝贝关系--滑动选择与宝贝关系--确认
-        self.find_element_id(self._rl_baby_relation_display).click()
-        self.slide.swipe_up(500)
-        self.find_element_id(self._tv_editor_baby_relation_confirm).click()
-        time.sleep(1)
-
-    """5.下滑一个，修改与宝贝的关系：爸爸-亲友-阿姨-叔叔-外婆-外公-姥姥-姥爷-奶奶-爷爷-妈妈"""
+    """4.下滑一个，修改与宝贝的关系：爸爸-亲友-阿姨-叔叔-外婆-外公-姥姥-姥爷-奶奶-爷爷-妈妈"""
     def editor_baby_relation_down(self):
         # 点击与宝贝关系，底部弹框显示宝贝关系
         self.find_element_id(self._rl_baby_relation_display).click()
@@ -539,7 +549,7 @@ class EditorBabyInfoPage(BasePage):
         self.slide.swipe_down_baby_relation(1000)
         self.find_element_id(self._tv_editor_baby_relation_confirm).click()
 
-    """6.上滑一个，修改与宝贝的关系：爸爸-妈妈-爷爷-奶奶-姥爷-姥姥-外公-外婆-叔叔-阿姨-亲友"""
+    """5.上滑一个，修改与宝贝的关系：爸爸-妈妈-爷爷-奶奶-姥爷-姥姥-外公-外婆-叔叔-阿姨-亲友"""
     def editor_baby_relation_up(self):
         # 点击与宝贝关系，底部弹框显示宝贝关系
         self.find_element_id(self._rl_baby_relation_display).click()
@@ -547,7 +557,25 @@ class EditorBabyInfoPage(BasePage):
         self.slide.swipe_up_baby_relation(1000)
         self.find_element_id(self._tv_editor_baby_relation_confirm).click()
 
-    """我的页面当前家庭圈管理员的与宝贝关系"""
-    def my_page_baby_relation_display(self):
-        my_page_baby_relation = self.find_element_id(self._tv_baby_relation).text
-        return my_page_baby_relation
+    """6.滑动任意位置修改与宝贝的关系，并修改成功"""
+    def editor_baby_relation_success(self):
+        # 点击与宝贝关系，底部弹框显示宝贝关系--滑动选择与宝贝关系--确认
+        self.find_element_id(self._rl_baby_relation_display).click()
+        self.slide.swipe_up(500)
+        self.find_element_id(self._tv_editor_baby_relation_confirm).click()
+        time.sleep(1)
+
+    """宝贝信息页面与宝贝关系显示"""
+    def baby_information_baby_relation_display(self):
+        baby_info_baby_relation_detail_display = self.find_element_id(self._iv_baby_relation_detail_display).text
+        return baby_info_baby_relation_detail_display
+
+    # """我的页面当前家庭圈管理员的与宝贝关系"""
+    # def my_page_baby_relation_display(self):
+    #     try:
+    #         my_page_baby_relations = self.find_element_id(self._tv_baby_relation_family)
+    #     except:
+    #         print("未找到管理员的与宝贝关系")
+    #     else:
+    #         my_page_baby_relation = my_page_baby_relations[0].text
+    #     return my_page_baby_relation
