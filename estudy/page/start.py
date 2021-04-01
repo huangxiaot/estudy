@@ -1,5 +1,6 @@
 # APP参数配置
 from appium import webdriver
+from page.login_page import LoginPage
 from page.reading_partner_page import ReadingPartnerPage
 
 
@@ -22,6 +23,7 @@ class AppStart:
         cls.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         cls.driver.implicitly_wait(5)
         return ReadingPartnerPage(cls.driver)
+        # return LoginPage(cls.driver)
 
     # 退出app
     @classmethod

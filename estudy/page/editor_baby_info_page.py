@@ -72,8 +72,10 @@ class EditorBabyInfoPage(BasePage):
     _iv_editor_baby_sex_girl = (By.ID, "com.intretech.readerx:id/img_baby_detail_girl")
 
     """以下元素为修改宝贝生日对应的元素"""
-    # 宝贝生日显示
+    # 宝贝生日点击区域
     _rl_baby_birth_display = (By.ID, "com.intretech.readerx:id/layout_baby_detail_birthday")
+    # 宝贝生日显示内容
+    _tv_baby_birth_detail_display = (By.ID, "com.intretech.readerx:id/tv_baby_detail_birthday")
     # 修改宝贝生日页面左上角修改年份按钮
     _tv_editor_baby_birth_year = (By.ID, "android:id/date_picker_header_year")
     # 修改宝贝生日页面年份定位
@@ -167,8 +169,7 @@ class EditorBabyInfoPage(BasePage):
         self.find_element_id(self._iv_editor_baby_avatar_take_photo).click()
         self.find_element_id(self._btn_editor_baby_avatar_confirm_photo).click()
         time.sleep(0.5)
-        # 系统拍照页面直接点击手机系统的返回键
-        # self.driver.press_keycode(4)
+        # 系统拍照页面已拍照裁剪页面点击“x”
         self.editor_baby_portrait_cancel_tailor()
         time.sleep(1)
 
@@ -184,13 +185,14 @@ class EditorBabyInfoPage(BasePage):
         try:
             portrait = self.find_element_classname(self._rl_editor_baby_portrait)
         except NoSuchElementException:
-            print("没有找到拍照按钮")
+            print("没有找到相册按钮")
         else:
             portrait[1].click()
 
     """6.相册方式修改宝贝头像，修改成功"""
     def editor_baby_portrait_photo_album_success(self):
         self.editor_baby_portrait_photo_album()
+        time.sleep(0.5)
         """ 
             1.判断系统相册中有没有照片
             2.有照片则点击第二张，没有照片则输出”没有找到照片“
@@ -209,8 +211,9 @@ class EditorBabyInfoPage(BasePage):
     """7.相册方式修改宝贝头像，相册页面取消"""
     def editor_baby_portrait_photo_album_cancel(self):
         self.editor_baby_portrait_photo_album()
-        # 系统相册页面直接点击手机系统的返回键
-        self.driver.press_keycode(4)
+        time.sleep(0.5)
+        # 系统相册页面直接点击返回键
+        self.editor_baby_portrait_cancel_tailor()
         time.sleep(0.5)
         self.find_element_id(self._tv_editor_baby_portrait_cancel).click()
         time.sleep(0.5)
@@ -218,6 +221,7 @@ class EditorBabyInfoPage(BasePage):
     """8.相册方式修改宝贝头像，裁剪页面取消"""
     def editor_baby_portrait_photo_album_cancel_tailor(self):
         self.editor_baby_portrait_photo_album()
+        time.sleep(0.5)
         """ 
             1.判断系统相册中有没有照片
             2.有照片则点击第二张，没有照片则输出”没有找到照片“
@@ -229,10 +233,8 @@ class EditorBabyInfoPage(BasePage):
         else:
             photos[1].click()
         # 系统相册选择照片后裁剪页面点击”x“
-        # self.driver.press_keycode(4)
         time.sleep(0.5)
         self.editor_baby_portrait_cancel_tailor()
-        time.sleep(1)
         # 返回我的页面
         self.find_element_id(self._iv_baby_information_display_back).click()
         time.sleep(0.5)
@@ -318,19 +320,18 @@ class EditorBabyInfoPage(BasePage):
     def split_baby_name_display(self):
         # 返回我的页面
         self.find_element_id(self._iv_baby_information_display_back).click()
-        # self.driver.press_keycode(4)
         # 获取页面显示的宝贝昵称、性别、年龄
         my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
         # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
         my_page_baby_infos = my_page_baby_infos_display.split("/")
-        print(my_page_baby_infos)
         # 获取宝贝昵称
         my_page_baby_name_display = my_page_baby_infos[0]
-        print(my_page_baby_name_display)
         return my_page_baby_name_display
 
     """1.修改宝贝性别女，并修改成功"""
     def editor_baby_sex_girl_success(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 循环点击男、女生头像
         for i in range(1, 10):
             self.find_element_id(self._iv_editor_baby_sex_boy).click()
@@ -357,13 +358,10 @@ class EditorBabyInfoPage(BasePage):
         my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
         # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
         my_page_baby_infos = my_page_baby_infos_display.split("/")
-        print(my_page_baby_infos)
         # 将存放宝贝性别和年龄的列表按照空格切割一次，切割后的列表中存放两个字符串，一个为性别，一个为年龄
         my_page_baby_sex_and_age = my_page_baby_infos[1].split(" ", 1)
-        print(my_page_baby_sex_and_age)
         # 读取列表中宝贝性别
         my_page_baby_sex_display = my_page_baby_sex_and_age[0]
-        print(my_page_baby_sex_display)
         return my_page_baby_sex_display
 
     """修改宝贝生日年份"""
@@ -412,26 +410,31 @@ class EditorBabyInfoPage(BasePage):
             print("没有找到该日期")
         else:
             days[17].click()
-        # 日期修改完成后点击确认
-        self.find_element_id(self._btn_editor_baby_birth_confirm).click()
         time.sleep(1)
 
     """1.不修改宝贝生日，点击取消按钮"""
     def editor_baby_birth_cancel(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 点击宝贝生日，进入编辑宝贝生日页面
         self.find_element_id(self._rl_baby_birth_display).click()
         # 不修改宝贝生日，点击取消按钮
         self.find_element_id(self._btn_editor_baby_birth_cancel).click()
+        time.sleep(0.5)
 
     """2.不修改宝贝生日，点击确定按钮"""
     def editor_baby_birth_confirm(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 点击宝贝生日，进入编辑宝贝生日页面
         self.find_element_id(self._rl_baby_birth_display).click()
-        # 不修改宝贝生日，点击取消按钮
+        # 不修改宝贝生日，点击确定按钮
         self.find_element_id(self._btn_editor_baby_birth_confirm).click()
 
     """3.点击宝贝生日年份，不修改，点击取消"""
     def editor_baby_birth_year_cancel(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 点击宝贝生日，进入编辑宝贝生日页面
         self.find_element_id(self._rl_baby_birth_display).click()
         # 点击修改年份
@@ -441,6 +444,8 @@ class EditorBabyInfoPage(BasePage):
 
     """4.点击宝贝生日年份，不修改，点击确定"""
     def editor_baby_birth_year_confirm(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
         # 点击宝贝生日，进入编辑宝贝生日页面
         self.find_element_id(self._rl_baby_birth_display).click()
         # 点击修改年份
@@ -450,16 +455,25 @@ class EditorBabyInfoPage(BasePage):
 
     """5.修改宝贝生日月份，修改后点击取消"""
     def editor_baby_birth_month_cancel(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 修改宝贝生日月份
         self.editor_baby_birth_month_success()
         self.find_element_id(self._btn_editor_baby_birth_cancel).click()
 
     """6.修改宝贝生日月份，修改后点击确定"""
     def editor_baby_birth_month_confirm(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 修改宝贝生日月份
         self.editor_baby_birth_month_success()
         self.find_element_id(self._btn_editor_baby_birth_confirm).click()
 
     """7.修改宝贝生日日期，修改后点击取消"""
     def editor_baby_birth_day_cancel(self):
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 修改宝贝生日月份
         self.editor_baby_birth_day_success()
         self.find_element_id(self._btn_editor_baby_birth_cancel)
 
@@ -470,8 +484,8 @@ class EditorBabyInfoPage(BasePage):
 
     """宝贝信息页面显示的宝贝生日"""
     def baby_information_baby_birth_display(self):
-        baby_info_birth_display = self.find_element_id(self._rl_baby_birth_display).text
-        return baby_info_birth_display
+        baby_info_baby_birth_display = self.find_element_id(self._tv_baby_birth_detail_display).text
+        return baby_info_baby_birth_display
 
     """将我的页面中宝贝年龄分割为独立字符串"""
     def split_my_page_baby_age_display(self):
@@ -481,13 +495,10 @@ class EditorBabyInfoPage(BasePage):
         my_page_baby_infos_display = self.find_element_id(self._tv_show_baby_info).text
         # 先将字符串按照”/“分割一个列表，列表中存放两个字符串，一个为昵称，另一个为性别和年龄
         my_page_baby_infos = my_page_baby_infos_display.split("/")
-        print(my_page_baby_infos)
         # 将存放宝贝性别和年龄的列表按照空格切割一次，切割后的列表中存放两个字符串，一个为性别，一个为年龄
         my_page_baby_sex_and_age = my_page_baby_infos[1].split(" ", 1)
-        print(my_page_baby_sex_and_age)
         # 读取列表中宝贝性别
         my_page_baby_age_display = my_page_baby_sex_and_age[1]
-        print(my_page_baby_age_display)
         return my_page_baby_age_display
 
     """1.取消修改与宝贝的关系"""

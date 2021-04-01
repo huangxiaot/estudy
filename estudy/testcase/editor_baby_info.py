@@ -58,104 +58,194 @@ class TestEditorBabyInfo:
     def test_editor_baby_portrait_photo_album_cancel_tailor(self):
         self.editor_baby_info.editor_baby_portrait_photo_album_cancel_tailor()
         print("8.相册方式，选择相册后在裁剪页面取消修改宝贝头像成功")
-    #
-    # """1.修改宝贝昵称，并修改成功"""
-    # @pytest.mark.run(order=9)
-    # @pytest.mark.parametrize("editor_baby_name", editor_baby_name_data)
-    # def test_editor_baby_name_success(self, editor_baby_name):
-    #     self.editor_baby_info.editor_baby_name_success(editor_baby_name)
-    #     # 判断修改的宝贝昵称与宝贝信息页面显示的宝贝昵称是否一致
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == editor_baby_name
-    #     print("1.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     # 判断修改的宝贝昵称与我的页面显示的宝贝昵称是否一致
-    #     assert self.editor_baby_info.split_baby_name_display() == editor_baby_name
-    #     print("1.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """2.未修改宝贝昵称，点击返回"""
-    # @pytest.mark.run(order=10)
-    # def test_editor_baby_name_back(self):
-    #     self.editor_baby_info.editor_baby_name_back()
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
-    #     print("2.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
-    #     print("2.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """3.未修改宝贝昵称，点击确定"""
-    # @pytest.mark.run(order=11)
-    # def test_editor_baby_name_confirm(self):
-    #     self.editor_baby_info.editor_baby_name_confirm()
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
-    #     print("3.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
-    #     print("3.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """4.已修改宝贝昵称，点击返回-取消"""
-    # @pytest.mark.run(order=12)
-    # def test_editor_baby_name_back_cancel(self):
-    #     editor_baby_name = "蜗牛宝宝啊"
-    #     self.editor_baby_info.editor_baby_name_back_cancel(editor_baby_name)
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝啊"
-    #     print("4.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝啊"
-    #     print("4.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """5.已修改宝贝昵称，点击返回-确定"""
-    # @pytest.mark.run(order=13)
-    # def test_editor_baby_name_back_confirm(self):
-    #     editor_baby_name = "蜗牛宝宝哦"
-    #     self.editor_baby_info.editor_baby_name_back_confirm(editor_baby_name)
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝啊"
-    #     print("5.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝啊"
-    #     print("5.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """6.修改宝贝昵称为空"""
-    # @pytest.mark.run(order=14)
-    # def test_editor_baby_name_null(self):
-    #     editor_baby_name = "蜗牛宝宝"
-    #     self.editor_baby_info.editor_baby_name_null()
-    #     self.editor_baby_info.toast.get_toast("请输入宝宝的昵称哦")
-    #     self.editor_baby_info.modify_baby_name(editor_baby_name)
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
-    #     print("6.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
-    #     print("6.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
-    #
-    # """7.修改宝贝昵称，大于16个字，选取前面16个字"""
-    # @pytest.mark.run(order=15)
-    # def test_editor_baby_name_sixteen_word(self):
-    #     editor_baby_name = "蜗牛宝宝abcdefghijklmn"
-    #     self.editor_baby_info.editor_baby_name_success(editor_baby_name)
-    #     assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝abcdefghijkl"
-    #     print("修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
-    #     assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝abcdefghijkl"
-    #     print("修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
 
-    # """1.修改宝贝性别女成功"""
-    # def test_editor_baby_sex_girl_success(self):
-    #     self.editor_baby_info.editor_baby_sex_girl_success()
-    #     # 判断修改的宝贝性别与我的页面显示的宝贝性别是否一致
-    #     assert self.editor_baby_info.split_baby_sex_display() == "女宝"
-    #     print("修改的宝贝性别与我的信息页面显示的宝贝性别一致")
-    #
-    # """2.修改宝贝性别男成功"""
-    # def test_editor_baby_sex_boy_success(self):
-    #     self.editor_baby_info.editor_baby_sex_boy_success()
-    #     # 判断修改的宝贝性别与我的页面显示的宝贝性别是否一致
-    #     assert self.editor_baby_info.split_baby_sex_display() == "男宝"
-    #     print("修改的宝贝性别与我的信息页面显示的宝贝性别一致")
-    #
-    # """修改宝贝生日成功"""
-    # def test_editor_baby_birth_success(self):
-    #     self.editor_baby_info.editor_baby_birth_success()
-    #
-    # """修改与宝贝的关系成功"""
-    # def test_editor_baby_relation_success(self):
-    #     self.editor_baby_info.editor_baby_relation_success()
-    #
-    # """修改与宝贝的关系为爸爸"""
-    # def test_editor_baby_relation_dad(self):
-    #     self.editor_baby_info.editor_baby_relation_dad()
+    """1.修改宝贝昵称，并修改成功"""
+    @pytest.mark.run(order=9)
+    @pytest.mark.parametrize("editor_baby_name", editor_baby_name_data)
+    def test_editor_baby_name_success(self, editor_baby_name):
+        self.editor_baby_info.editor_baby_name_success(editor_baby_name)
+        # 判断修改的宝贝昵称与宝贝信息页面显示的宝贝昵称是否一致
+        assert self.editor_baby_info.baby_information_baby_name_display() == editor_baby_name
+        print("1.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        # 判断修改的宝贝昵称与我的页面显示的宝贝昵称是否一致
+        assert self.editor_baby_info.split_baby_name_display() == editor_baby_name
+        print("1.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """2.未修改宝贝昵称，点击返回"""
+    @pytest.mark.run(order=10)
+    def test_editor_baby_name_back(self):
+        self.editor_baby_info.editor_baby_name_back()
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
+        print("2.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
+        print("2.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """3.未修改宝贝昵称，点击确定"""
+    @pytest.mark.run(order=11)
+    def test_editor_baby_name_confirm(self):
+        self.editor_baby_info.editor_baby_name_confirm()
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
+        print("3.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
+        print("3.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """4.已修改宝贝昵称，点击返回-取消"""
+    @pytest.mark.run(order=12)
+    def test_editor_baby_name_back_cancel(self):
+        editor_baby_name = "蜗牛宝宝啊"
+        self.editor_baby_info.editor_baby_name_back_cancel(editor_baby_name)
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝啊"
+        print("4.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝啊"
+        print("4.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """5.已修改宝贝昵称，点击返回-确定"""
+    @pytest.mark.run(order=13)
+    def test_editor_baby_name_back_confirm(self):
+        editor_baby_name = "蜗牛宝宝哦"
+        self.editor_baby_info.editor_baby_name_back_confirm(editor_baby_name)
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝啊"
+        print("5.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝啊"
+        print("5.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """6.修改宝贝昵称为空"""
+    @pytest.mark.run(order=14)
+    def test_editor_baby_name_null(self):
+        editor_baby_name = "蜗牛宝宝"
+        self.editor_baby_info.editor_baby_name_null()
+        self.editor_baby_info.toast.get_toast("请输入宝宝的昵称哦")
+        self.editor_baby_info.modify_baby_name(editor_baby_name)
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝"
+        print("6.修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝"
+        print("6.修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """7.修改宝贝昵称，大于16个字，选取前面16个字"""
+    @pytest.mark.run(order=15)
+    def test_editor_baby_name_sixteen_word(self):
+        editor_baby_name = "蜗牛宝宝abcdefghijklmn"
+        self.editor_baby_info.editor_baby_name_success(editor_baby_name)
+        assert self.editor_baby_info.baby_information_baby_name_display() == "蜗牛宝宝abcdefghijkl"
+        print("修改的宝贝昵称与宝贝信息页面显示的宝贝昵称一致")
+        assert self.editor_baby_info.split_baby_name_display() == "蜗牛宝宝abcdefghijkl"
+        print("修改的宝贝昵称与我的信息页面显示的宝贝昵称一致")
+
+    """1.修改宝贝性别女成功"""
+    @pytest.mark.run(order=16)
+    def test_editor_baby_sex_girl_success(self):
+        self.editor_baby_info.editor_baby_sex_girl_success()
+        # 判断修改的宝贝性别与我的页面显示的宝贝性别是否一致
+        assert self.editor_baby_info.split_baby_sex_display() == "女宝"
+        print("1.修改的宝贝性别女与我的信息页面显示的宝贝性别一致")
+
+    """2.修改宝贝性别男成功"""
+    @pytest.mark.run(order=17)
+    def test_editor_baby_sex_boy_success(self):
+        self.editor_baby_info.editor_baby_sex_boy_success()
+        # 判断修改的宝贝性别与我的页面显示的宝贝性别是否一致
+        assert self.editor_baby_info.split_baby_sex_display() == "男宝"
+        print("2.修改的宝贝性别男与我的信息页面显示的宝贝性别一致")
+
+    """1.不修改宝贝生日，点击取消按钮"""
+    @pytest.mark.run(order=18)
+    def test_editor_baby_birth_cancel(self):
+        self.editor_baby_info.editor_baby_birth_cancel()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("1.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("1.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """2.不修改宝贝生日，点击确定按钮"""
+    @pytest.mark.run(order=19)
+    def test_editor_baby_birth_confirm(self):
+        self.editor_baby_info.editor_baby_birth_confirm()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("2.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("2.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """3.点击宝贝生日年份，不修改，点击取消"""
+    @pytest.mark.run(order=20)
+    def test_editor_baby_birth_year_cancel(self):
+        self.editor_baby_info.editor_baby_birth_year_cancel()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("3.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("3.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """4.点击宝贝生日年份，不修改，点击确定"""
+    @pytest.mark.run(order=21)
+    def test_editor_baby_birth_year_confirm(self):
+        self.editor_baby_info.editor_baby_birth_year_confirm()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("4.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("4.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """5.修改宝贝生日月份，修改后点击取消"""
+    @pytest.mark.run(order=22)
+    def test_editor_baby_birth_month_cancel(self):
+        self.editor_baby_info.editor_baby_birth_month_cancel()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("5.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("5.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """6.修改宝贝生日月份，修改后点击确定"""
+    @pytest.mark.run(order=23)
+    def test_editor_baby_birth_month_confirm(self):
+        self.editor_baby_info.editor_baby_birth_month_confirm()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("6.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("6.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """7.修改宝贝生日日期，修改后点击取消"""
+    @pytest.mark.run(order=24)
+    def test_editor_baby_birth_day_cancel(self):
+        self.editor_baby_info.editor_baby_birth_day_cancel()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("7.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("7.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """8.修改宝贝生日日期，修改后点击确认按钮"""
+    @pytest.mark.run(order=25)
+    def test_editor_baby_birth_day_confirm(self):
+        self.editor_baby_info.editor_baby_birth_day_confirm()
+        # 判断宝贝信息页面的宝贝生日显示
+        assert self.editor_baby_info.baby_information_baby_birth_display() == "1993-01-07"
+        print("8.修改的宝贝生日与宝贝信息页面显示的宝贝生日一致")
+        # 判断我的页面显示的宝贝年龄显示
+        assert self.editor_baby_info.split_my_page_baby_age_display() == "28岁 二个月"
+        print("8.修改的宝贝生日与我的页面显示的宝贝年龄一致")
+
+    """修改宝贝生日成功"""
+    def test_editor_baby_birth_success(self):
+        self.editor_baby_info.editor_baby_birth_success()
+
+    """修改与宝贝的关系成功"""
+    def test_editor_baby_relation_success(self):
+        self.editor_baby_info.editor_baby_relation_success()
+
+    """修改与宝贝的关系为爸爸"""
+    def test_editor_baby_relation_dad(self):
+        self.editor_baby_info.editor_baby_relation_dad()
 
     def teardown_class(self):
         AppStart.quit()
