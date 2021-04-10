@@ -48,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PO_Demo/PO_Qxueban_Demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WeiboDemo/Weibo" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -57,7 +57,51 @@
       <recent name="E:\study\Fork\estudy\estudy\venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for editor_baby_info.TestEditorBabyInfo">
+  <component name="RunManager" selected="Python.image_manager">
+    <configuration name="file_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="estudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\study\Fork\estudy\estudy\utils\file_manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="estudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\study\Fork\estudy\estudy\utils\image_manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="estudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_01" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="estudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +137,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo&quot;" />
+      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_01&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_check_baby_portrait" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="estudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,11 +154,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth&quot;" />
+      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_check_baby_portrait&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="estudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,7 +171,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back&quot;" />
+      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -148,56 +192,22 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="estudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="estudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_success" />
-      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth" />
-      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo" />
-      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel" />
-      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm" />
-      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back" />
+      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_check_baby_portrait" />
+      <item itemvalue="Python.file_manager" />
+      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait" />
+      <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_01" />
+      <item itemvalue="Python.image_manager" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo" />
-        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back" />
-        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm" />
-        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel" />
-        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth" />
+        <item itemvalue="Python.image_manager" />
+        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_01" />
+        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait" />
+        <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_check_baby_portrait" />
+        <item itemvalue="Python.file_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +243,13 @@
       <workItem from="1616980144446" duration="1442000" />
       <workItem from="1617083438274" duration="16448000" />
       <workItem from="1617171118046" duration="3698000" />
-      <workItem from="1617245354333" duration="15357000" />
+      <workItem from="1617245354333" duration="25644000" />
+      <workItem from="1617708030053" duration="3498000" />
+      <workItem from="1617790230239" duration="6914000" />
+      <workItem from="1617875662853" duration="6476000" />
+      <workItem from="1617957413119" duration="2000" />
+      <workItem from="1617965530387" duration="1269000" />
+      <workItem from="1618018633474" duration="18352000" />
     </task>
     <servers />
   </component>
@@ -270,34 +286,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="520" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614858908938" />
-    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1617257023379">
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1618036022388">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617257023379" />
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618036022388" />
     <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614941960181" />
     <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616585643188" />
-    <state width="1493" height="305" key="GridCell.Tab.0.bottom" timestamp="1617265691833">
+    <state width="1493" height="450" key="GridCell.Tab.0.bottom" timestamp="1618054923048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617265691833" />
+    <state width="1493" height="450" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618054923048" />
     <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
     <state width="1493" height="597" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616589704868" />
-    <state width="1493" height="305" key="GridCell.Tab.0.center" timestamp="1617265691833">
+    <state width="1493" height="450" key="GridCell.Tab.0.center" timestamp="1618054923048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="305" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617265691833" />
+    <state width="1493" height="450" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618054923048" />
     <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
     <state width="1493" height="597" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616589704868" />
-    <state width="1493" height="305" key="GridCell.Tab.0.left" timestamp="1617265691833">
+    <state width="1493" height="450" key="GridCell.Tab.0.left" timestamp="1618054923047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="305" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617265691833" />
+    <state width="1493" height="450" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618054923047" />
     <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
     <state width="1493" height="597" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616589704868" />
-    <state width="1493" height="305" key="GridCell.Tab.0.right" timestamp="1617265691833">
+    <state width="1493" height="450" key="GridCell.Tab.0.right" timestamp="1618054923048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="305" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617265691833" />
+    <state width="1493" height="450" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618054923048" />
     <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
     <state width="1493" height="597" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616589704868" />
     <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1617104157759">
@@ -320,15 +336,15 @@
     </state>
     <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617104157759" />
     <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1616745578677">
+    <state x="270" y="57" key="SettingsEditor" timestamp="1617881798523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1616745578677" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617881798523" />
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614946056885" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617256691273">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618051056647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617256691273" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1618051056647" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614856532854" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616583014540" />
   </component>
@@ -340,55 +356,66 @@
           <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/testcase/editor_baby_info.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel Coverage Results" MODIFIED="1617102698354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch.coverage" NAME="pytest for search.TestSearch Coverage Results" MODIFIED="1614856628803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back_cancel Coverage Results" MODIFIED="1617101245133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$get_excel_data.coverage" NAME="get_excel_data Coverage Results" MODIFIED="1615982786212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name Coverage Results" MODIFIED="1616583292893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back Coverage Results" MODIFIED="1617264462446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth Coverage Results" MODIFIED="1617261032213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_success Coverage Results" MODIFIED="1616723355919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_day_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_day_confirm Coverage Results" MODIFIED="1617260946622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_null.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_null Coverage Results" MODIFIED="1617101816828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_success Coverage Results" MODIFIED="1617172157908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_baby_name.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_baby_name Coverage Results" MODIFIED="1616823354188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_confirm Coverage Results" MODIFIED="1617100874998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_month_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_month_confirm Coverage Results" MODIFIED="1617174252286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_in_search_py.coverage" NAME="pytest in search.py Coverage Results" MODIFIED="1614859456405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_dad.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_dad Coverage Results" MODIFIED="1617090500681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_cancel Coverage Results" MODIFIED="1617173393202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_day_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_day_cancel Coverage Results" MODIFIED="1617174648387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_cancel_tailor Coverage Results" MODIFIED="1617171341036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_cancel Coverage Results" MODIFIED="1617102910779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_confirm Coverage Results" MODIFIED="1617173602399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album Coverage Results" MODIFIED="1616501016750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_year_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_year_confirm Coverage Results" MODIFIED="1617173935796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back_confirm Coverage Results" MODIFIED="1617101347091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm Coverage Results" MODIFIED="1617263636938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex Coverage Results" MODIFIED="1616502278465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_repeat_get_verify_code.coverage" NAME="pytest for bind_phone.TestBindPhone.test_repeat_get_verify_code Coverage Results" MODIFIED="1617279169190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$my_family_page.coverage" NAME="my_family_page Coverage Results" MODIFIED="1616729718091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_sixteen_word.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_sixteen_word Coverage Results" MODIFIED="1617101859844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_01.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_01 Coverage Results" MODIFIED="1616724397274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_success Coverage Results" MODIFIED="1616725529380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel Coverage Results" MODIFIED="1617263285286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_portrait_photograph_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_portrait_photograph_success Coverage Results" MODIFIED="1617102507051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_cancel Coverage Results" MODIFIED="1617259660415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_success.coverage" NAME="pytest for bind_phone.TestBindPhone.test_success Coverage Results" MODIFIED="1617258908874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_success.coverage" NAME="pytest for bind_phone.TestBindPhone.test_success Coverage Results" MODIFIED="1617271246005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_01.coverage" NAME="pytest for search.TestSearch.test_01 Coverage Results" MODIFIED="1615975914254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_month_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_month_cancel Coverage Results" MODIFIED="1617174071811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo Coverage Results" MODIFIED="1617265405700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_portrait Coverage Results" MODIFIED="1616500047339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_search.coverage" NAME="pytest for search.TestSearch.test_search Coverage Results" MODIFIED="1617259536818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex_girl_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex_girl_success Coverage Results" MODIFIED="1616840556305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel_tailor Coverage Results" MODIFIED="1617104121707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$screenshot.coverage" NAME="file_manager Coverage Results" MODIFIED="1618041175700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_phone_more_larger.coverage" NAME="pytest for bind_phone.TestBindPhone.test_phone_more_larger Coverage Results" MODIFIED="1617278677746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch.coverage" NAME="pytest for search.TestSearch Coverage Results" MODIFIED="1614856628803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back_cancel Coverage Results" MODIFIED="1617101245133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$get_excel_data.coverage" NAME="get_excel_data Coverage Results" MODIFIED="1615982786212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name Coverage Results" MODIFIED="1616583292893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_success Coverage Results" MODIFIED="1617172157908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_baby_name.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_baby_name Coverage Results" MODIFIED="1616823354188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_check_baby_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_check_baby_portrait Coverage Results" MODIFIED="1618041696038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$check_image.coverage" NAME="check_image Coverage Results" MODIFIED="1618050141570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_dad.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_dad Coverage Results" MODIFIED="1617090500681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_cancel Coverage Results" MODIFIED="1617173393202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_cancel_tailor Coverage Results" MODIFIED="1617171341036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_confirm Coverage Results" MODIFIED="1617173602399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_year_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_year_confirm Coverage Results" MODIFIED="1617173935796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex Coverage Results" MODIFIED="1616502278465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_sixteen_word.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_sixteen_word Coverage Results" MODIFIED="1617101859844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_success Coverage Results" MODIFIED="1616725529380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_01.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_01 Coverage Results" MODIFIED="1618045236460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel Coverage Results" MODIFIED="1617263285286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_cancel Coverage Results" MODIFIED="1617259660415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_portrait Coverage Results" MODIFIED="1616500047339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_check_my_page_baby_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait Coverage Results" MODIFIED="1618045230557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_search.coverage" NAME="pytest for search.TestSearch.test_search Coverage Results" MODIFIED="1617259536818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_excel_search.coverage" NAME="pytest for search.TestSearch.test_excel_search Coverage Results" MODIFIED="1617259572542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_success Coverage Results" MODIFIED="1617100186555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_year_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_year_cancel Coverage Results" MODIFIED="1617173882361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel_photo.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel_photo Coverage Results" MODIFIED="1617102808317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel_tailor Coverage Results" MODIFIED="1617104121707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$log.coverage" NAME="log Coverage Results" MODIFIED="1614945462869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex_success Coverage Results" MODIFIED="1616587808087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$server.coverage" NAME="server Coverage Results" MODIFIED="1617248950569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />

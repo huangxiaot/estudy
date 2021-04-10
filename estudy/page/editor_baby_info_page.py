@@ -4,6 +4,8 @@ from appium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from page.base_page import BasePage
+from utils.image_manager import ImageManager
+from utils.file_manager import FileManager
 from utils.slide import Slide
 from utils.toast import Toast
 
@@ -15,6 +17,8 @@ class EditorBabyInfoPage(BasePage):
         super().__init__(driver)
         self.slide = Slide(driver)
         self.toast = Toast(driver)
+        self.img_manager = ImageManager()
+        self.f_manager = FileManager(driver)
 
     """我的页面显示的宝贝信息，包括头像、昵称、性别、年龄"""
     # 宝贝昵称、性别、年龄显示
@@ -114,7 +118,7 @@ class EditorBabyInfoPage(BasePage):
     def editor_baby_portrait_photograph(self):
         # 点击宝贝头像
         self.find_element_id(self._iv_baby_avatar_display).click()
-        time.sleep(0.5)
+        time.sleep(1)
         """ 
         1.判断有没有拍照&相册按钮
         2.存在点击相册按钮，不存在输出”没有找到拍照按钮“
@@ -240,6 +244,51 @@ class EditorBabyInfoPage(BasePage):
         # 返回我的页面
         self.find_element_id(self._iv_baby_information_display_back).click()
         time.sleep(0.5)
+
+    """宝贝信息页面，判断修改前后的宝贝头像是否一致"""
+    def check_baby_info_baby_portrait(self):
+        # 宝贝信息页面修改前的宝贝头像，截图保存
+        self.f_manager.get_baby_info_baby_portrait()
+        # 修改宝贝头像操作
+        self.editor_baby_portrait_photograph_success()
+        time.sleep(2)
+        # 宝贝信息页面修改后的宝贝头像，截图保存
+        self.f_manager.get_baby_info_baby_portrait()
+        """判断修改前后的宝贝头像相似率
+            1.相似率小于1，表示两张图片不一致，头像修改成功
+            2.相似率等于1，表示两张图片一致，头像修改失败
+        """
+        similarity = self.img_manager.compare_baby_info_baby_portrait()
+        if similarity < 1:
+            print("两张图片不一致，头像修改成功")
+        elif similarity == 1:
+            print("两张图片一致，头像修改失败")
+
+    """我的页面，判断修改前后宝贝头像是否一致"""
+    def check_my_page_baby_portrait(self):
+        time.sleep(0.5)
+        # 返回我的页面
+        self.find_element_id(self._iv_baby_information_display_back).click()
+        # 我的页面修改前的宝贝头像，截图保存
+        self.f_manager.get_my_page_baby_portrait()
+        # 进入宝贝信息页面
+        self.find_element_id(self._iv_baby_info).click()
+        # 修改宝贝头像
+        self.editor_baby_portrait_photograph_success()
+        time.sleep(1)
+        # 返回我的页面
+        self.find_element_id(self._iv_baby_information_display_back).click()
+        # 我的页面修改后的宝贝头像，截图保存
+        self.f_manager.get_my_page_baby_portrait()
+        """判断修改前后的宝贝头像相似率
+            1.相似率小于1，表示两张图片不一致，头像修改成功
+            2.相似率等于1，表示两张图片一致，头像修改失败
+        """
+        similarity = self.img_manager.compare_my_page_baby_portrait()
+        if similarity < 1:
+            print("两张图片不一致，头像修改成功")
+        elif similarity == 1:
+            print("两张图片一致，头像修改失败")
 
     """修改宝贝昵称页面-输入宝贝昵称"""
     def input_baby_name(self, editor_baby_name):
@@ -570,12 +619,6 @@ class EditorBabyInfoPage(BasePage):
         baby_info_baby_relation_detail_display = self.find_element_id(self._iv_baby_relation_detail_display).text
         return baby_info_baby_relation_detail_display
 
-    # """我的页面当前家庭圈管理员的与宝贝关系"""
-    # def my_page_baby_relation_display(self):
-    #     try:
-    #         my_page_baby_relations = self.find_element_id(self._tv_baby_relation_family)
-    #     except:
-    #         print("未找到管理员的与宝贝关系")
-    #     else:
-    #         my_page_baby_relation = my_page_baby_relations[0].text
-    #     return my_page_baby_relation
+    # 对比完成后删除该文件夹下.jpg为后缀的图片
+    def delete_image(self):
+        self.f_manager.delete_all_image()

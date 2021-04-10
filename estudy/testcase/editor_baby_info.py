@@ -60,6 +60,14 @@ class TestEditorBabyInfo:
         self.editor_baby_info.editor_baby_portrait_photo_album_cancel_tailor()
         print("8.相册方式，选择相册后在裁剪页面取消修改宝贝头像成功")
 
+    """宝贝信息页面判断修改前后的宝贝头像相似度"""
+    def test_check_baby_info_baby_portrait(self):
+        self.editor_baby_info.check_baby_info_baby_portrait()
+
+    """我的页面判断修改前后的宝贝头像相似率"""
+    def test_check_my_page_baby_portrait(self):
+        self.editor_baby_info.check_my_page_baby_portrait()
+
     """1.修改宝贝昵称，并修改成功"""
     @pytest.mark.run(order=9)
     @pytest.mark.parametrize("editor_baby_name", editor_baby_name_data)
