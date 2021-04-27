@@ -18,7 +18,7 @@ class GetExcelData:
 
 
 # 测试函数，执行过程中可以注释
-# if __name__ == '__main__':
-#     path = "E:\\study\\Fork\\other_file\\test_searchs.xlsx"
-#     a = GetExcelData(path)
-#     a.pd_read_excel(path)
+if __name__ == '__main__':
+    path = "E:\\study\\Fork\\other_file\\test_searchs.xlsx"
+    a = GetExcelData(path)
+    a.pd_read_excel(path)

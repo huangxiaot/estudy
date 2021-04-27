@@ -1,7 +1,7 @@
 # APP参数配置
 from appium import webdriver
 from page.login_page import LoginPage
-from page.reading_partner_page import ReadingPartnerPage
+from page.reading_partner_page import ReadingPartnerPage, ReadingPartnerPageTwo
 
 
 class AppStart:
@@ -14,7 +14,7 @@ class AppStart:
                 "deviceName": "000002b74cd8494e",
                 "platforVersion": "9",
                 "appPackage": "com.intretech.readerx",
-                "appActivity": "com.intretech.readerx.ui.WelcomeActivity",
+                "appActivity": "com.intretech.readerx.main.WelcomeActivity",
                 "autoGrantPermissions": "true",
                 "automationName": "UiAutomator2",
                 "noReset": True
@@ -22,7 +22,8 @@ class AppStart:
 
         cls.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         cls.driver.implicitly_wait(5)
-        return ReadingPartnerPage(cls.driver)
+        # return ReadingPartnerPage(cls.driver)
+        return ReadingPartnerPageTwo(cls.driver)
         # return LoginPage(cls.driver)
 
     # 退出app
