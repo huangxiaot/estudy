@@ -1,9 +1,9 @@
 # 基础类，封装元素定位操作
-from selenium.webdriver.remote.webdriver import WebDriver
+from appium import webdriver
 
 
 class BasePage:
-    def __init__(self, driver: WebDriver):
+    def __init__(self, driver: webdriver):
         self.driver = driver
 
     """通过id定位"""

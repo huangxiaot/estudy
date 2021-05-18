@@ -78,3 +78,5 @@ class MyAccountPage(BasePageTwo):
         self.editor_my_account_name(my_account_name)
         self.element_android_uiautomator(self._iv_editor_my_account_confirm).click()
         time.sleep(2)
+
+    """使用弹框异常处理"""

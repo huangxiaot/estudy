@@ -14,7 +14,7 @@ class BasePageTwo:
     def elements_android_uiautomator(self, locator):
         return self.driver.find_elements_by_android_uiautomator(locator)
 
-    def find_element_au(self, locator):
+    def find_element(self, locator):
         try:
             return self.driver.find_element_by_android_uiautomator(locator)
         except:

@@ -10,7 +10,8 @@ from page.search_page import Search
 
 class ReadingPartnerPage(BasePage):
     # 搜索框
-    _tv_search = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView"
+    # _tv_search = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView"
+    search = (By.ID, "com.intretech.readerx:id/layout_search_container")
     # 左上角我的页面入口
     _iv_my = (By.ID, "com.intretech.readerx:id/img_toolbar_main_avatar")
     # 宝贝信息页面入口
@@ -18,8 +19,9 @@ class ReadingPartnerPage(BasePage):
 
     """进入搜索页面"""
     def enter_search(self):
-        time.sleep(1)
-        self.find_element_xpath(self._tv_search).click()
+        time.sleep(10)
+        # self.find_element_xpath(self._tv_search).click()
+        self.find_element_id(self.search).click()
         return Search(self.driver)
 
     """进入我的--修改宝贝信息页面"""
@@ -39,5 +41,5 @@ class ReadingPartnerPageTwo(BasePageTwo):
     """进入我的页面"""
     def enter_my_page(self):
         time.sleep(1)
-        self.element_android_uiautomator(self._my).click()
+        self.find_element(self._my).click()
         return MyPage(self.driver)
