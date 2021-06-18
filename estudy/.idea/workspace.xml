@@ -22,7 +22,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6d30cef-3686-4f6d-b2f4-db7549c3f8e8" name="Default Changelist" comment="" />
+    <list default="true" id="c6d30cef-3686-4f6d-b2f4-db7549c3f8e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/estudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/estudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/search.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/search.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/test_baby_info_baby_portrait1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/test_baby_info_baby_portrait2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/my_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/my_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/html/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/html/search/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/json/search/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/editor_baby_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/editor_baby_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/search.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,16 +64,88 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Python/PC_ShiLi" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\study\Fork\Learning\LearnPower" />
+      <recent name="E:\study\Fork\WeiboDemo\Weibo\appium_sync" />
       <recent name="E:\study\Fork\estudy\estudy\venv" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\study\Fork\WeiboDemo\Weibo\appium_sync" />
+      <recent name="E:\study\Fork\WeiboDemo\Weibo\common" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test.TestAddWeibo.test_001">
+  <component name="RunManager" selected="Python.devices_upgrade">
+    <configuration name="appium_devices_sync" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Weibo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync/appium_devices_sync.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="check_port_use (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Weibo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync/check_port_use.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="devices_upgrade" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="estudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/page" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/page/devices_upgrade.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="estudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,21 +168,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for account_login_test.TestAccountLogin.test_001" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="multi_appium" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Weibo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;account_login_test.TestAccountLogin.test_001&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync/multi_appium.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LearnPower" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Learning/LearnPower/page" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Learning/LearnPower/page/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_success" type="tests" factoryName="py.test" nameIsGenerated="true">
@@ -114,90 +229,22 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for my_account.TestMyAccount.test_editor_my_account_name_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="estudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;my_account.TestMyAccount.test_editor_my_account_name_success&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for search.TestSearch.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="estudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;search.TestSearch.test_search&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test.TestAddWeibo.test_001" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Weibo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestAddWeibo.test_001&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in search.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="estudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/search.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.appium_devices_sync" />
+      <item itemvalue="Python.check_port_use (1)" />
+      <item itemvalue="Python.multi_appium" />
+      <item itemvalue="Python.start" />
       <item itemvalue="Python tests.pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_success" />
-      <item itemvalue="Python tests.pytest in search.py" />
-      <item itemvalue="Python tests.pytest for search.TestSearch.test_search" />
-      <item itemvalue="Python tests.pytest for account_login_test.TestAccountLogin.test_001" />
-      <item itemvalue="Python tests.pytest for my_account.TestMyAccount.test_editor_my_account_name_success" />
-      <item itemvalue="Python tests.pytest for test.TestAddWeibo.test_001" />
+      <item itemvalue="Python.devices_upgrade" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test.TestAddWeibo.test_001" />
-        <item itemvalue="Python tests.pytest for my_account.TestMyAccount.test_editor_my_account_name_success" />
-        <item itemvalue="Python tests.pytest for account_login_test.TestAccountLogin.test_001" />
-        <item itemvalue="Python tests.pytest for search.TestSearch.test_search" />
-        <item itemvalue="Python tests.pytest in search.py" />
+        <item itemvalue="Python.devices_upgrade" />
+        <item itemvalue="Python.start" />
+        <item itemvalue="Python.appium_devices_sync" />
+        <item itemvalue="Python.multi_appium" />
+        <item itemvalue="Python.check_port_use (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -270,6 +317,23 @@
       <workItem from="1620902691287" duration="4696000" />
       <workItem from="1621334162703" duration="4377000" />
       <workItem from="1621340563301" duration="135000" />
+      <workItem from="1621410631523" duration="151000" />
+      <workItem from="1621427172664" duration="750000" />
+      <workItem from="1621501343543" duration="4000" />
+      <workItem from="1621502717053" duration="6498000" />
+      <workItem from="1621564474219" duration="1008000" />
+      <workItem from="1621567538464" duration="856000" />
+      <workItem from="1621596382725" duration="5297000" />
+      <workItem from="1621857080144" duration="5063000" />
+      <workItem from="1621903551030" duration="160000" />
+      <workItem from="1621926595617" duration="11342000" />
+      <workItem from="1621941182104" duration="6049000" />
+      <workItem from="1622000722036" duration="17012000" />
+      <workItem from="1622075814672" duration="8671000" />
+      <workItem from="1623233861340" duration="3568000" />
+      <workItem from="1623816031983" duration="1068000" />
+      <workItem from="1623829955108" duration="2090000" />
+      <workItem from="1623893454494" duration="30571000" />
     </task>
     <servers />
   </component>
@@ -289,10 +353,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="178" key="#Log_Highlighting_(ideolog)" timestamp="1614945406525">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="460" y="178" key="#Log_Highlighting_(ideolog)/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614945406525" />
     <state x="507" y="232" key="#Notifications" timestamp="1620113640790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -301,93 +361,84 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1616825664370" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614774087640" />
     <state x="449" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1620113632055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620113632055" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617259204197">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621929971044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617259204197" />
-    <state x="520" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1614858908938">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="520" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614858908938" />
-    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1620210350137">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1621929971044" />
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1623894103500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620210350137" />
-    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614941960181" />
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623894103500" />
     <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616585643188" />
-    <state width="1493" height="384" key="GridCell.Tab.0.bottom" timestamp="1621339388675">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620476926110" />
-    <state width="1493" height="384" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1621339388675" />
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
     <state width="1493" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.272.1536.824@0.0.1536.824" timestamp="1620818723001" />
     <state width="981" height="481" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1618834639855" />
     <state width="1493" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620822816266" />
-    <state width="1493" height="384" key="GridCell.Tab.0.center" timestamp="1621339388674">
+    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620476926110" />
-    <state width="1493" height="384" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1621339388674" />
-    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
+    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
     <state width="1493" height="333" key="GridCell.Tab.0.center/0.0.1536.824/-1920.272.1536.824@0.0.1536.824" timestamp="1620818723001" />
     <state width="981" height="481" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1618834639855" />
     <state width="1493" height="333" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620822816265" />
-    <state width="1493" height="384" key="GridCell.Tab.0.left" timestamp="1621339388674">
+    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620476926110" />
-    <state width="1493" height="384" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1621339388674" />
-    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
+    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
     <state width="1493" height="333" key="GridCell.Tab.0.left/0.0.1536.824/-1920.272.1536.824@0.0.1536.824" timestamp="1620818723001" />
     <state width="981" height="481" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1618834639855" />
     <state width="1493" height="333" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620822816265" />
-    <state width="1493" height="384" key="GridCell.Tab.0.right" timestamp="1621339388675">
+    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620476926110" />
-    <state width="1493" height="384" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1621339388675" />
-    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
+    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
     <state width="1493" height="333" key="GridCell.Tab.0.right/0.0.1536.824/-1920.272.1536.824@0.0.1536.824" timestamp="1620818723001" />
     <state width="981" height="481" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1618834639855" />
     <state width="1493" height="333" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620822816265" />
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1617104157759">
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617104157759" />
-    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162786" />
-    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1617104157759">
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
+    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617104157759" />
-    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
-    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1617104157759">
+    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
+    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617104157759" />
-    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
-    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1617104157759">
+    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
+    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1623934060447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617104157759" />
-    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1615033162784" />
-    <state x="295" y="0" width="1139" height="824" key="SettingsEditor" timestamp="1620902879086">
+    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623934060447" />
+    <state x="295" y="0" width="1139" height="824" key="SettingsEditor" timestamp="1623816178929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1617881798523" />
-    <state x="295" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1620902879086" />
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614946056885" />
+    <state x="295" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623816178929" />
     <state x="295" y="0" width="1139" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620822268082" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1620116059992">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1623893727038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.-104.1536.824@0.0.1536.824" timestamp="1620116059992" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.152.1536.824@0.0.1536.824" timestamp="1614856532854" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1623893727038" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616583014540" />
   </component>
   <component name="XDebuggerManager">
@@ -413,23 +464,31 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel Coverage Results" MODIFIED="1617102698354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$check_port.coverage" NAME="check_port Coverage Results" MODIFIED="1622013175263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back Coverage Results" MODIFIED="1617264462446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth Coverage Results" MODIFIED="1617261032213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_success Coverage Results" MODIFIED="1616723355919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_account_login_test_TestAccountLogin_test_one.coverage" NAME="pytest for account_login_test.TestAccountLogin.test_one Coverage Results" MODIFIED="1618906695461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_day_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_day_confirm Coverage Results" MODIFIED="1617260946622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_null.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_null Coverage Results" MODIFIED="1617101816828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$check_port_release.coverage" NAME="check_port_release Coverage Results" MODIFIED="1622079865670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_confirm Coverage Results" MODIFIED="1617100874998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_month_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_month_confirm Coverage Results" MODIFIED="1617174252286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_in_search_py.coverage" NAME="pytest in search.py Coverage Results" MODIFIED="1620115947209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$multi_devices__1_.coverage" NAME="multi_devices (1) Coverage Results" MODIFIED="1621938070480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
+    <SUITE FILE_PATH="coverage/estudy$multi_appium.coverage" NAME="multi_appium Coverage Results" MODIFIED="1622082619518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_day_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_day_cancel Coverage Results" MODIFIED="1617174648387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_cancel Coverage Results" MODIFIED="1617102910779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album Coverage Results" MODIFIED="1616501016750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$multi_devices.coverage" NAME="multi_devices Coverage Results" MODIFIED="1622001489021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back_confirm Coverage Results" MODIFIED="1617101347091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_confirm Coverage Results" MODIFIED="1617263636938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_repeat_get_verify_code.coverage" NAME="pytest for bind_phone.TestBindPhone.test_repeat_get_verify_code Coverage Results" MODIFIED="1617279169190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$my_family_page.coverage" NAME="my_family_page Coverage Results" MODIFIED="1616729718091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_my_account_TestMyAccount_test_editor_my_account_portrait_album.coverage" NAME="pytest for my_account.TestMyAccount.test_editor_my_account_portrait_album Coverage Results" MODIFIED="1619058473750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$devices_upgrade.coverage" NAME="devices_upgrade Coverage Results" MODIFIED="1623930040977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
+    <SUITE FILE_PATH="coverage/estudy$start_appium.coverage" NAME="start_appium Coverage Results" MODIFIED="1621932986073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/common" />
+    <SUITE FILE_PATH="coverage/estudy$check_port_use__1_.coverage" NAME="check_port_use (1) Coverage Results" MODIFIED="1622082600712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_portrait_photograph_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_portrait_photograph_success Coverage Results" MODIFIED="1617102507051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_success.coverage" NAME="pytest for bind_phone.TestBindPhone.test_success Coverage Results" MODIFIED="1617271246005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_01.coverage" NAME="pytest for search.TestSearch.test_01 Coverage Results" MODIFIED="1615975914254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -437,9 +496,11 @@
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo Coverage Results" MODIFIED="1617265405700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_my_account_TestMyAccount_test_editor_my_account_name_success.coverage" NAME="pytest for my_account.TestMyAccount.test_editor_my_account_name_success Coverage Results" MODIFIED="1620818686431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex_girl_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex_girl_success Coverage Results" MODIFIED="1616840556305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$start.coverage" NAME="start Coverage Results" MODIFIED="1623831943728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Learning/LearnPower/page" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photograph_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photograph_cancel_tailor Coverage Results" MODIFIED="1617104121707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_account_login_test_TestAccountLogin_test_001.coverage" NAME="pytest for account_login_test.TestAccountLogin.test_001 Coverage Results" MODIFIED="1620700516384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
     <SUITE FILE_PATH="coverage/estudy$screenshot.coverage" NAME="file_manager Coverage Results" MODIFIED="1618041175700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/estudy$pytest_for_add_weibo_test_TestAddWeibo_test_001.coverage" NAME="pytest for add_weibo_test.TestAddWeibo.test_001 Coverage Results" MODIFIED="1621937992515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_bind_phone_TestBindPhone_test_phone_more_larger.coverage" NAME="pytest for bind_phone.TestBindPhone.test_phone_more_larger Coverage Results" MODIFIED="1617278677746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch.coverage" NAME="pytest for search.TestSearch Coverage Results" MODIFIED="1614856628803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_back_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_back_cancel Coverage Results" MODIFIED="1617101245133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -456,14 +517,18 @@
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_photo_album_cancel_tailor.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_photo_album_cancel_tailor Coverage Results" MODIFIED="1617171341036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_confirm Coverage Results" MODIFIED="1617173602399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_year_confirm.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_year_confirm Coverage Results" MODIFIED="1617173935796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$appium_devices_sync.coverage" NAME="appium_devices_sync Coverage Results" MODIFIED="1622085019564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_sex.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_sex Coverage Results" MODIFIED="1616502278465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_name_sixteen_word.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_name_sixteen_word Coverage Results" MODIFIED="1617101859844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_birth_success.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_birth_success Coverage Results" MODIFIED="1616725529380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_01.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_01 Coverage Results" MODIFIED="1618045236460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_relation_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_relation_cancel Coverage Results" MODIFIED="1617263285286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$multi_devices_sync.coverage" NAME="multi_devices_sync Coverage Results" MODIFIED="1622013093657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_baby_portrait_cancel.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_baby_portrait_cancel Coverage Results" MODIFIED="1617259660415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_test_location_TestLocation_test_001.coverage" NAME="pytest for test_location.TestLocation.test_001 Coverage Results" MODIFIED="1618229406909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_account_login_test_TestAccountLogin_test_two.coverage" NAME="pytest for account_login_test.TestAccountLogin.test_two Coverage Results" MODIFIED="1619526821277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/testcase" />
+    <SUITE FILE_PATH="coverage/estudy$multi_appium_sync.coverage" NAME="multi_appium_sync Coverage Results" MODIFIED="1622013085581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
+    <SUITE FILE_PATH="coverage/estudy$multi_appium__1_.coverage" NAME="multi_appium (1) Coverage Results" MODIFIED="1621942787665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../WeiboDemo/Weibo/appium_sync" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_editor_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_editor_portrait Coverage Results" MODIFIED="1616500047339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_editor_baby_info_TestEditorBabyInfo_test_check_my_page_baby_portrait.coverage" NAME="pytest for editor_baby_info.TestEditorBabyInfo.test_check_my_page_baby_portrait Coverage Results" MODIFIED="1618045230557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/estudy$pytest_for_search_TestSearch_test_search.coverage" NAME="pytest for search.TestSearch.test_search Coverage Results" MODIFIED="1620117684583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />

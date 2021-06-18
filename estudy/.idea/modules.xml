@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Learning/LearnPower/.idea/LearnPower.iml" filepath="$PROJECT_DIR$/../../Learning/LearnPower/.idea/LearnPower.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../WeiboDemo/Weibo/.idea/Weibo.iml" filepath="$PROJECT_DIR$/../../WeiboDemo/Weibo/.idea/Weibo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/estudy.iml" filepath="$PROJECT_DIR$/.idea/estudy.iml" />
     </modules>

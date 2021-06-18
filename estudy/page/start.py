@@ -11,8 +11,8 @@ class AppStart:
     @classmethod
     def start(cls):
         caps = {"platformName": "Android",
-                "deviceName": "000002b74cd8494e",
-                "platforVersion": "9",
+                "deviceName": "2895bd7f",
+                "platforVersion": "8",
                 "appPackage": "com.intretech.readerx",
                 "appActivity": "com.intretech.readerx.main.WelcomeActivity",
                 "autoGrantPermissions": "true",
@@ -22,8 +22,8 @@ class AppStart:
 
         cls.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         cls.driver.implicitly_wait(5)
-        # return ReadingPartnerPage(cls.driver)
-        return ReadingPartnerPageTwo(cls.driver)
+        return ReadingPartnerPage(cls.driver)
+        # return ReadingPartnerPageTwo(cls.driver)
         # return LoginPage(cls.driver)
 
     # 退出app

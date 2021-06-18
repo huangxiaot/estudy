@@ -1,7 +1,10 @@
 # 搜索测试用例
 import pytest
+import sys
 import yaml
 from page.start import AppStart
+path = "E:\\study\\Fork\\estudy\\estudy\\"
+sys.path.append(path)
 
 
 class TestSearch:
@@ -17,9 +20,9 @@ class TestSearch:
     def test_search(self, search_context):
         self.search.input_search_context(search_context)
 
-    """读取外部excel文件内容，传入参数"""
-    def test_excel_search(self):
-        self.search.input_excel_search_context()
+    # """读取外部excel文件内容，传入参数"""
+    # def test_excel_search(self):
+    #     self.search.input_excel_search_context()
 
     def teardown_class(self):
         AppStart.quit()
